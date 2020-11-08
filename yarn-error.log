@@ -1,0 +1,64 @@
+Arguments: 
+  /opt/node/node-v12.14.0-darwin-x64/bin/node /opt/node/current/bin/yarn add config @tyes/config
+
+PATH: 
+  /Library/Frameworks/Python.framework/Versions/3.7/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/opt/kotlin/current/bin:/Users/moh/go/bin:/opt/go/current/bin:/Users/moh/Library/Python/3.6/bin:/opt/node/current/bin:/opt/scala/current/bin:/opt/sqlite/current:/opt/spring_roo/current/bin:/opt/dart/current/bin:/opt/grails/current/bin:/opt/gradle/current/bin:/opt/maven/current/bin:/opt/compiled/bin:/opt/spring_cli/current/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  12.14.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@tyes%2fconfig: Not found
+      at Request.params.callback [as _callback] (/opt/node/node-v12.14.0-darwin-x64/lib/node_modules/yarn/lib/cli.js:66947:18)
+      at Request.self.callback (/opt/node/node-v12.14.0-darwin-x64/lib/node_modules/yarn/lib/cli.js:140665:22)
+      at Request.emit (events.js:210:5)
+      at Request.<anonymous> (/opt/node/node-v12.14.0-darwin-x64/lib/node_modules/yarn/lib/cli.js:141637:10)
+      at Request.emit (events.js:210:5)
+      at IncomingMessage.<anonymous> (/opt/node/node-v12.14.0-darwin-x64/lib/node_modules/yarn/lib/cli.js:141559:12)
+      at Object.onceWrapper (events.js:299:28)
+      at IncomingMessage.emit (events.js:215:7)
+      at endReadableNT (_stream_readable.js:1184:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+    "name": "sso-api",
+    "version": "1.0.0",
+    "description": "Kante-IO Single Sign On API",
+    "main": "index.js",
+    "engines": {
+      "node": ">=12.14.0"
+    },
+    "scripts": {
+      "start": "ts-node src/index.ts",
+      "serve": "nodemon --exec ts-node src/index.ts",
+      "test": "jest --config=jest.config.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@types/express": "^4.17.8",
+      "body-parser": "^1.19.0",
+      "express": "^4.17.1",
+      "nodemon": "^2.0.4",
+      "ts-node": "^9.0.0",
+      "typescript": "^4.0.2"
+    },
+    "devDependencies": {
+      "@types/jest": "^26.0.13",
+      "jest": "^26.4.2",
+      "ts-jest": "^26.3.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
