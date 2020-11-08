@@ -2,7 +2,7 @@ import * as restify from 'restify';
 import * as corsMiddleware from 'restify-cors-middleware';
 import { addRoutes } from './routes';
 
-const log = console.log;
+const { log } = console;
 const PORT = 8080;
 
 const server = restify.createServer();
@@ -22,7 +22,6 @@ server.use(restify.plugins.gzipResponse());
 addRoutes(server);
 
 (async (): Promise<void> => {
-
   server.listen(PORT, () => {
     log(`Server listening on http://localhost:${PORT}`);
   });
