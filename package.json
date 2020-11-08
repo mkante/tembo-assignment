@@ -8,7 +8,8 @@
   "scripts": {
     "start": "ts-node src/index.ts",
     "serve": "nodemon --exec ts-node src/index.ts",
-    "lint": "eslint src test --ext .ts "
+    "lint": "eslint src test --ext .ts ",
+    "test": "NODE_ENV=test jest --config=jest.unit.js"
   },
   "author": "",
   "license": "ISC",
@@ -23,7 +24,8 @@
     "restify": "^8.5.1",
     "restify-cors-middleware": "^1.1.1",
     "ts-node": "^9.0.0",
-    "typescript": "^4.0.2"
+    "typescript": "^4.0.2",
+    "uuid": "^8.3.1"
   },
   "devDependencies": {
     "@types/jest": "^26.0.13",

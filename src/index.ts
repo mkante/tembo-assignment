@@ -3,7 +3,7 @@ import * as corsMiddleware from 'restify-cors-middleware';
 import { addRoutes } from './routes';
 
 const log = console.log;
-const PORT = 808;
+const PORT = 8080;
 
 const server = restify.createServer();
 
